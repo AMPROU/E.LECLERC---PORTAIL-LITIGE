@@ -38,9 +38,9 @@
 
           </a>
           <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">Mon compte</a></li>
+            <li><a class="dropdown-item" href=<?php echo e(url('/compte/voir')); ?>>Mon compte</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="exit">Deconnexion</a></li>
+            <li><a class="dropdown-item" href=<?php echo e(url('/exit')); ?>>Deconnexion</a></li>
           </ul>
         </div>
       </div>

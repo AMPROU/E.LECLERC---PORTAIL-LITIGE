@@ -26,6 +26,14 @@ Route::get('/exit', 'App\Http\Controllers\SocialiteController@exit');
 # HOME
 Route::get('/home', 'App\Http\Controllers\home@index');
 
+# COMPTE
+Route::get('/compte/voir', 'App\Http\Controllers\CompteController@show');
+
+# MAGASIN
+Route::get('/magasin/voir/{id}', 'App\Http\Controllers\CompteController@show')->name('magasin.voir');
+
+
+
 #Non Autorisée
 Route::get('notaccess', function () {
     return view('welcome');

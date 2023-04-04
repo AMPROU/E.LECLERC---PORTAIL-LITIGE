@@ -37,9 +37,9 @@
             <img src="{{Auth::user()->avatar}}"alt="mdo" width="32" height="32" class="rounded-circle"> {{Auth::user()->name}} : {{$magasin->nom_magasin}}
           </a>
           <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">Mon compte</a></li>
+            <li><a class="dropdown-item" href={{ url('/compte/voir') }}>Mon compte</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="exit">Deconnexion</a></li>
+            <li><a class="dropdown-item" href={{ url('/exit') }}>Deconnexion</a></li>
           </ul>
         </div>
       </div>

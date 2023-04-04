@@ -34,6 +34,7 @@ class SocialiteController extends Controller
     {   
         Auth::logout();
         $request->session()->invalidate();
+        $request->session()->regenerateToken();
         return redirect('/');
     }
 #########################################################################################
@@ -123,7 +124,8 @@ class SocialiteController extends Controller
                     'avatar' => $avatar,
                     'google_id'=> $googleid,
                     'permissions_id' => 1,
-                    
+                    'token' => $token,
+                    'token_expire' => $token_expire
                     ]);
             }
 

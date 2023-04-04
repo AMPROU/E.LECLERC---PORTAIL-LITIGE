@@ -29,6 +29,8 @@ class User extends Authenticatable
         'magasin_id',
         'google_id',
         'permissions_id',
+        'token',
+        'token_expire'
     ];
 
 
