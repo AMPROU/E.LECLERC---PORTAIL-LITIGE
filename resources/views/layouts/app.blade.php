@@ -6,27 +6,20 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>BTLEC OUEST</title>
-    <!-- Favicon-->
+    <!-- FAVICON-->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/E.leclerc.ico') }}" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- FAVICON-->
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+     <!-- BOOTSTRAP -->
     <!-- MDB -->
-<!-- Font Awesome -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
-  rel="stylesheet"
-/>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"  rel="stylesheet"/>
+    <!-- MDB -->
+    <!-- CUSTOM CSS -->
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+    <!-- CUSTOM CSS -->
 </head>
 
 <body>
@@ -61,7 +54,7 @@
           </a>
         </li>
 
-  <!-- MENU GAUCHE -->
+ <!-- MENU GAUCHE -->
  <!-- MENU MAGASIN -->
         <li class="nav-item dropdown text-center mx-2 mx-lg-1">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
@@ -107,13 +100,7 @@
               <a class="dropdown-item" href="#">ADMINISTRATION</a>
             </li>
           </ul>
-        </li>
-      
-      
-      
-      
-
-        
+        </li>       
       </ul>
 <!-- MENU DROITE -->
     </div>
@@ -124,32 +111,32 @@
 </header>
 
 
-
-
-
+<!-- CONTENU-->
   <div class="container">
 @yield('content')
 </div>
+<!-- CONTENU-->
 
 
-<!-- Footer-->
+<!-- FOOTER-->
 <footer class="py-1 bg-dark">
     <div class="container"><p class="m-0 text-center text-white">Copyright &copy; BTLEC OUEST 2023</p></div>
 </footer>
+<!-- FOOTER-->
 
 <!-- Bootstrap core JS
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-<!-- MDB -->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
-></script>
-<!-- Core theme JS-->
-<!-- <script src="{{ asset('js/scripts.js') }}"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> -->
+
+<!-- MDB JS -->
+<script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+<!-- MDB JS -->
+<!-- SCRIPT JS GLOBAL-->
+<script src="{{ asset('js/scripts.js') }}"></script>
+<!-- SCRIPT JS GLOBAL-->
+<!-- CONTAINER JS PAGE-->
 @stack('js')
+<!-- CONTAINER JS PAGE-->
 
 
 </body>
